@@ -1,3 +1,4 @@
+import 'dynamic_stack.dart';
 import 'fixed_stack.dart';
 import 'linked_list.dart';
 import 'dart:io';
@@ -35,6 +36,20 @@ void main(List<String> arguments) {
   mrzFixedStack.display();
 
   print("######################### FIXED STACK END #########################");
+
+  print("######################### DYNAMIC STACK START #########################");
+  MrzDynamicStack<String> mrzDynamicStack = MrzDynamicStack();
+  mrzDynamicStack.push(item: "Hello 1");
+  mrzDynamicStack.push(item: "Hello 2");
+  mrzDynamicStack.push(item: "Hello 3");
+  mrzDynamicStack.display();
+  stdout.writeln();
+  stdout.writeln(mrzDynamicStack.pop());
+  stdout.writeln();
+  mrzDynamicStack.display();
+  stdout.writeln();
+  print(mrzDynamicStack.search(index: 1));
+  print("######################### DYNAMIC STACK END #########################");
 
   List<int> arr = List.filled(5, 0);
   arr[0] = 0;
