@@ -1,5 +1,5 @@
-class MrzNode{
-  final int value;
+class MrzNode<T>{
+  final T value;
   MrzNode? next;
   MrzNode({required this.value, required this.next});
 }

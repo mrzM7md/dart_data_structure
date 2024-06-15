@@ -3,7 +3,7 @@ import 'linked_list.dart';
 void main(List<String> arguments) {
   /// LinkedList
   print("######################### LINKED LIS START #########################");
-  MrzNode head = MrzNode(value: 1, next: null);
+  MrzNode head = MrzNode<int>(value: 1, next: null);
   MrzLinkedList mrzLinkedList = MrzLinkedList(head: head);
   mrzLinkedList.addFirst(newNode: MrzNode(value: 0, next: null));
   mrzLinkedList.addFirst(newNode: MrzNode(value: -1, next: null));
