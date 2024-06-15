@@ -1,4 +1,6 @@
+import 'fixed_stack.dart';
 import 'linked_list.dart';
+import 'dart:io';
 
 void main(List<String> arguments) {
   /// LinkedList
@@ -11,6 +13,28 @@ void main(List<String> arguments) {
   mrzLinkedList.deleteFirst();
   mrzLinkedList.display();
   print("######################### LINKED LIS END #########################");
+
+  stdout.writeln();
+
+  print("######################### FIXED STACK START #########################");
+  MrzFixedStack<int> mrzFixedStack = MrzFixedStack(size: 5);
+  mrzFixedStack.push(item: 1);
+  mrzFixedStack.push(item: 2);
+  mrzFixedStack.push(item: 3);
+  mrzFixedStack.push(item: 4);
+  mrzFixedStack.display();
+  stdout.writeln(mrzFixedStack.pop());
+  stdout.writeln();
+  mrzFixedStack.display();
+  stdout.writeln();
+  stdout.writeln(mrzFixedStack.search(index: 2));
+  stdout.writeln();
+  stdout.writeln(mrzFixedStack.pop());
+  stdout.writeln(mrzFixedStack.pop());
+  stdout.writeln(mrzFixedStack.pop());
+  mrzFixedStack.display();
+
+  print("######################### FIXED STACK END #########################");
 
   List<int> arr = List.filled(5, 0);
   arr[0] = 0;
