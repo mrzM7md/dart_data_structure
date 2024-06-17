@@ -1,6 +1,5 @@
-import 'dart:collection';
-import 'algotithms/binary_search_algorithm.dart';
-import 'algotithms/interpolation_search_algorithm.dart';
+import 'algorithms/search/binary_search_algorithm.dart';
+import 'algorithms/search/interpolation_search_algorithm.dart';
 import 'dynamic_stack.dart';
 import 'fixed_stack.dart';
 import 'linked_list.dart';
