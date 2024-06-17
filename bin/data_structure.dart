@@ -1,5 +1,6 @@
 import 'dart:collection';
-import 'algotithms/binary_search.dart';
+import 'algotithms/binary_search_algorithm.dart';
+import 'algotithms/interpolation_search_algorithm.dart';
 import 'dynamic_stack.dart';
 import 'fixed_stack.dart';
 import 'linked_list.dart';
@@ -58,6 +59,13 @@ void main(List<String> arguments) {
   for(int i = 1; i <= 1000000; i++){
     l.add(i);
   }
-  print(BinarySearch().getBinarySearch(orderedNs: l, num: 100000));
+
+  print("######################### BinarySearch START #########################");
+  print(BinarySearch().getBinarySearch(orderedNs: l, num: 4));
+  print("######################### BinarySearch END #########################");
+
+  print("######################### INTERPOLATION SEARCH START #########################");
+  print(InterpolationSearch().getBinarySearch(orderedNs: l, num: 4));
+  print("######################### INTERPOLATION SEARCH END #########################");
 }
 

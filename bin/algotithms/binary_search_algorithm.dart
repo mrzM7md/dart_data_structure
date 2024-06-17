@@ -7,7 +7,7 @@ class BinarySearch {
     bool isFind = false;
     int min = 0;
     int high = orderedNs.length - 1;
-    int mid = min + (high - min)~/2 ;
+    int mid = 0;
     int resultIndex = -1;
     int searchTimes = 0;
 
@@ -19,12 +19,12 @@ class BinarySearch {
         return -1;
       }
 
+      mid = min + (high - min)~/2 ;
       if(orderedNs[mid] == num){
         isFind = true;
         resultIndex = orderedNs.indexOf(num);
         break;
       }
-      mid = min + (high - min)~/2 ;
       if(orderedNs[mid] > num){
         high = mid-1;
       }
