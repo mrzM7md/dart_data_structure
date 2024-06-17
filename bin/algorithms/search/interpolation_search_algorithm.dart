@@ -3,7 +3,7 @@
 // you need to mid, low, high
 //ex
 class InterpolationSearch {
-  int getBinarySearch({required List<int> orderedNs, required int num}) {
+  int getInterpolationSearch({required List<int> orderedNs, required int num}) {
     bool isFind = false;
     int min = 0;
     int high = orderedNs.length - 1;
