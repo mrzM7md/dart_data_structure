@@ -24,13 +24,12 @@ class BinarySearch {
         resultIndex = orderedNs.indexOf(num);
         break;
       }
+      mid = min + (high - min)~/2 ;
       if(orderedNs[mid] > num){
         high = mid-1;
-        mid = min + (high - min)~/2 ;
       }
       else{
         min = mid + 1;
-        mid = min + (high - min)~/2;
       }
     }
 
