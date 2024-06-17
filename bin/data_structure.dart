@@ -1,3 +1,5 @@
+import 'dart:collection';
+import 'algotithms/binary_search.dart';
 import 'dynamic_stack.dart';
 import 'fixed_stack.dart';
 import 'linked_list.dart';
@@ -51,7 +53,11 @@ void main(List<String> arguments) {
   print(mrzDynamicStack.search(index: 1));
   print("######################### DYNAMIC STACK END #########################");
 
-  List<int> arr = List.filled(5, 0);
-  arr[0] = 0;
-  arr[1] = 1;
+
+  List<int> l = [];
+  for(int i = 1; i <= 1000000; i++){
+    l.add(i);
+  }
+  print(BinarySearch().getBinarySearch(orderedNs: l, num: 100000));
 }
+
