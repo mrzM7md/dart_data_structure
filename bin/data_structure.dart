@@ -1,6 +1,7 @@
 import 'algorithms/search/binary_search_algorithm.dart';
 import 'algorithms/search/interpolation_search_algorithm.dart';
 import 'algorithms/sort/bubble_sort_algorithm.dart';
+import 'algorithms/sort/selection_sort_algorithm.dart';
 import 'dynamic_stack.dart';
 import 'fixed_stack.dart';
 import 'linked_list.dart';
@@ -69,6 +70,10 @@ void main(List<String> arguments) {
   print("######################### INTERPOLATION SEARCH END #########################");
 
   print("######################### BUBBLE SORT START #########################");
-  print(BubbleSort().getBubbleSort([1, 4, 3, 2, 10, 8, 6]));
+  print(BubbleSort().getBubbleSort([22, 1, 0, 4, 3, 2, 10, 8, 6]));
   print("######################### BUBBLE SORT END #########################");
+
+  print("######################### SELECTION SORT START #########################");
+  print(SelectionSort().getSelectionSort(unSortedNumbers: [22, 1, 0, 4, 3, 2, 10, 8, 6]));
+  print("######################### SELECTION SORT END #########################");
 }
