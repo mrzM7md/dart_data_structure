@@ -4,6 +4,7 @@ import 'algorithms/sort/bubble_sort_algorithm.dart';
 import 'algorithms/sort/selection_sort_algorithm.dart';
 import 'dynamic_stack.dart';
 import 'fixed_stack.dart';
+import 'hash_table.dart';
 import 'linked_list.dart';
 import 'dart:io';
 
@@ -76,4 +77,14 @@ void main(List<String> arguments) {
   print("######################### SELECTION SORT START #########################");
   print(SelectionSort().getSelectionSort(unSortedNumbers: [22, 1, 0, 4, 3, 2, 10, 8, 6]));
   print("######################### SELECTION SORT END #########################");
+
+  print("######################### HASH TABLE START #########################");
+
+  var h = MrxHashTable(size: 8)
+    ..insert(key: 1, value: "anyValue")
+    ..insert(key: 1, value: "anyValue")
+  ;
+  h.displayHash();
+
+  print("######################### HASH TABLE SORT END #########################");
 }
